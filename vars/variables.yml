@@ -4,6 +4,8 @@ ip:
     backend: "172.31.30.17"
     nfs_server: "172.31.24.33"
     host: "%"
+    frontend_private_ip: "172.31.%"
+    BACKEND_PRIVATE_IP: "172.31.30.17"
 
 db:
     name: wordpress_db
@@ -11,11 +13,14 @@ db:
     password: password
 
 wordpress:
+    directory: /var/www/html
+    domain: "https://wordpressansible.zapto.org"
     locale: es_ES
-    title: WordPress desplegado con Ansible
+    title: WordPress Marina
     admin_user: adminWord123
-    admin_pass: adminWord.123
+    admin_password: adminWord.123
     admin_email: demo@demo.es
+    hide_login_url: "escondido"
 
 directories:
     wordpress: "/var/www/html"
@@ -26,3 +31,9 @@ network:
 certbot:
     email: otrousuario@email.es
     domain: wordpressansible.zapto.org
+
+apache:
+    service_name: apache2  
+
+security:
+    force_https: true  
