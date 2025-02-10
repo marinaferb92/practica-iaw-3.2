@@ -1,0 +1,28 @@
+ip:
+    frontend1: "172.31.29.157"
+    frontend2: "172.31.25.29"
+    backend: "172.31.30.17"
+    nfs_server: "172.31.24.33"
+    host: "%"
+
+db:
+    name: wordpress_db
+    user: user
+    password: password
+
+wordpress:
+    locale: es_ES
+    title: WordPress desplegado con Ansible
+    admin_user: adminWord123
+    admin_pass: adminWord.123
+    admin_email: demo@demo.es
+
+directories:
+    wordpress: "/var/www/html"
+
+network:
+    frontend: "172.31.0.0/16"
+
+certbot:
+    email: otrousuario@email.es
+    domain: wordpressansible.zapto.org
