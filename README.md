@@ -41,7 +41,8 @@ Al terminar veremos que se han ejecutado todos los cambios sin errores.
 ![image](https://github.com/user-attachments/assets/f8da878e-46e2-444e-a82c-8e2b47ee12fb)
 
 
-#COMPROBACIONES
+# COMPROBACIONES
+
 Para comprobar que todo ha funcionado, entraremos en el dominio que hemos definido para la IP del balanceador
 
 ![image](https://github.com/user-attachments/assets/3b6b916d-af0e-4ad2-b712-f1957a503d96)
