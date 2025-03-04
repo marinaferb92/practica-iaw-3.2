@@ -24,7 +24,14 @@ ansible_user=ubuntu
 ansible_ssh_private_key_file=/home/ubuntu/ubuntu4.pem
 ansible_ssh_common_args='-o StrictHostKeyChecking=accept-new'
 ````
-
+Los scripts para la instalación siguen los mismos pasos que en la [practica-iaw-1.11](https://github.com/marinaferb92/practica-iaw-1.11)
+- Configuracion de la pila LAMP para Frontend y Backen
+- Configuracion del balanceador de carga
+- Instalación de certificado
+- Instalación de la base de datos Wordpress en el Backend
+- Desscarga y configuración de Wordpress en los Frontales
+- configuracion de servidor NFS y los clientes NFS
+- 
 Una vez configurado el inventory podremos ejecutar [main.yml]([main.yml](https://github.com/marinaferb92/practica-iaw-3.2/blob/256f167f6713fecf8a3c9a1a2b1cedb64fe481bd/main.yml)), donde tendremos puestos todos los playbooks en el orden de ejcución que queremos, con el comando `ansible-playbook + la ruta de nuestro inmventario + nuesto usuario + nuestra ruta a la clave vockey`, comenzaremos a ejecutar los playbooks.
 
 ![image](https://github.com/user-attachments/assets/dbf5d279-538a-466e-9bc1-e9d6c1e21d00)
